@@ -11,13 +11,17 @@
 		38FA6BE5178152D300EFB5D9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38FA6BE4178152D300EFB5D9 /* Foundation.framework */; };
 		38FA6BE7178152D300EFB5D9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38FA6BE6178152D300EFB5D9 /* CoreGraphics.framework */; };
 		38FA6BED178152D300EFB5D9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 38FA6BEB178152D300EFB5D9 /* InfoPlist.strings */; };
-		38FA6BEF178152D300EFB5D9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 38FA6BEE178152D300EFB5D9 /* main.m */; };
-		38FA6BF3178152D300EFB5D9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 38FA6BF2178152D300EFB5D9 /* AppDelegate.m */; };
 		38FA6BF5178152D300EFB5D9 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 38FA6BF4178152D300EFB5D9 /* Default.png */; };
 		38FA6BF7178152D300EFB5D9 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 38FA6BF6178152D300EFB5D9 /* Default@2x.png */; };
 		38FA6BF9178152D300EFB5D9 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 38FA6BF8178152D300EFB5D9 /* Default-568h@2x.png */; };
-		38FA6BFC178152D300EFB5D9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38FA6BFB178152D300EFB5D9 /* ViewController.m */; };
-		38FA6BFF178152D300EFB5D9 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38FA6BFD178152D300EFB5D9 /* ViewController.xib */; };
+		99B88B2B179E596D00E1C365 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 99B88B29179E596D00E1C365 /* 1.jpg */; };
+		99B88B2C179E596D00E1C365 /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 99B88B2A179E596D00E1C365 /* 2.jpg */; };
+		99B88B38179E63E100E1C365 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99B88B37179E63E100E1C365 /* opencv2.framework */; };
+		99B88B3F179E649300E1C365 /* PhotoAppViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99B88B3B179E649300E1C365 /* PhotoAppViewController.xib */; };
+		99B88B45179E64D400E1C365 /* PhotoAppViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99B88B43179E64D400E1C365 /* PhotoAppViewController.m */; };
+		99B88B46179E64D400E1C365 /* RootViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 99B88B44179E64D400E1C365 /* RootViewController.mm */; };
+		99B88B48179E64E000E1C365 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 99B88B47179E64E000E1C365 /* AppDelegate.m */; };
+		99B88B4A179E650B00E1C365 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 99B88B49179E650B00E1C365 /* main.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,16 +31,21 @@
 		38FA6BE6178152D300EFB5D9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		38FA6BEA178152D300EFB5D9 /* CrazyMirror-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CrazyMirror-Info.plist"; sourceTree = "<group>"; };
 		38FA6BEC178152D300EFB5D9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		38FA6BEE178152D300EFB5D9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		38FA6BF0178152D300EFB5D9 /* CrazyMirror-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CrazyMirror-Prefix.pch"; sourceTree = "<group>"; };
 		38FA6BF1178152D300EFB5D9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		38FA6BF2178152D300EFB5D9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		38FA6BF4178152D300EFB5D9 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		38FA6BF6178152D300EFB5D9 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		38FA6BF8178152D300EFB5D9 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		38FA6BFA178152D300EFB5D9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		38FA6BFB178152D300EFB5D9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		38FA6BFE178152D300EFB5D9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		99B88B29179E596D00E1C365 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 1.jpg; path = Resource/1.jpg; sourceTree = "<group>"; };
+		99B88B2A179E596D00E1C365 /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 2.jpg; path = Resource/2.jpg; sourceTree = "<group>"; };
+		99B88B37179E63E100E1C365 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = Frameworks/opencv2.framework; sourceTree = "<group>"; };
+		99B88B39179E649300E1C365 /* PhotoAppViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PhotoAppViewController.h; path = CrazyMirror/Controllers/PhotoAppViewController.h; sourceTree = "<group>"; };
+		99B88B3B179E649300E1C365 /* PhotoAppViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PhotoAppViewController.xib; path = CrazyMirror/Controllers/PhotoAppViewController.xib; sourceTree = "<group>"; };
+		99B88B3C179E649300E1C365 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RootViewController.h; path = CrazyMirror/Controllers/RootViewController.h; sourceTree = "<group>"; };
+		99B88B43179E64D400E1C365 /* PhotoAppViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PhotoAppViewController.m; path = CrazyMirror/Controllers/PhotoAppViewController.m; sourceTree = "<group>"; };
+		99B88B44179E64D400E1C365 /* RootViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = RootViewController.mm; path = CrazyMirror/Controllers/RootViewController.mm; sourceTree = "<group>"; };
+		99B88B47179E64E000E1C365 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		99B88B49179E650B00E1C365 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +56,7 @@
 				38FA6BE3178152D300EFB5D9 /* UIKit.framework in Frameworks */,
 				38FA6BE5178152D300EFB5D9 /* Foundation.framework in Frameworks */,
 				38FA6BE7178152D300EFB5D9 /* CoreGraphics.framework in Frameworks */,
+				99B88B38179E63E100E1C365 /* opencv2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +83,7 @@
 		38FA6BE1178152D300EFB5D9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				99B88B37179E63E100E1C365 /* opencv2.framework */,
 				38FA6BE2178152D300EFB5D9 /* UIKit.framework */,
 				38FA6BE4178152D300EFB5D9 /* Foundation.framework */,
 				38FA6BE6178152D300EFB5D9 /* CoreGraphics.framework */,
@@ -83,12 +94,11 @@
 		38FA6BE8178152D300EFB5D9 /* CrazyMirror */ = {
 			isa = PBXGroup;
 			children = (
-				38FA6BF1178152D300EFB5D9 /* AppDelegate.h */,
-				38FA6BF2178152D300EFB5D9 /* AppDelegate.m */,
-				38FA6BFA178152D300EFB5D9 /* ViewController.h */,
-				38FA6BFB178152D300EFB5D9 /* ViewController.m */,
-				38FA6BFD178152D300EFB5D9 /* ViewController.xib */,
 				38FA6BE9178152D300EFB5D9 /* Supporting Files */,
+				38FA6BF1178152D300EFB5D9 /* AppDelegate.h */,
+				99B88B47179E64E000E1C365 /* AppDelegate.m */,
+				99B88B28179E594000E1C365 /* Controllers */,
+				99B88B27179E592E00E1C365 /* Resource */,
 			);
 			path = CrazyMirror;
 			sourceTree = "<group>";
@@ -96,15 +106,38 @@
 		38FA6BE9178152D300EFB5D9 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				99B88B49179E650B00E1C365 /* main.m */,
 				38FA6BEA178152D300EFB5D9 /* CrazyMirror-Info.plist */,
 				38FA6BEB178152D300EFB5D9 /* InfoPlist.strings */,
-				38FA6BEE178152D300EFB5D9 /* main.m */,
 				38FA6BF0178152D300EFB5D9 /* CrazyMirror-Prefix.pch */,
 				38FA6BF4178152D300EFB5D9 /* Default.png */,
 				38FA6BF6178152D300EFB5D9 /* Default@2x.png */,
 				38FA6BF8178152D300EFB5D9 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		99B88B27179E592E00E1C365 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				99B88B29179E596D00E1C365 /* 1.jpg */,
+				99B88B2A179E596D00E1C365 /* 2.jpg */,
+			);
+			name = Resource;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		99B88B28179E594000E1C365 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				99B88B39179E649300E1C365 /* PhotoAppViewController.h */,
+				99B88B43179E64D400E1C365 /* PhotoAppViewController.m */,
+				99B88B3B179E649300E1C365 /* PhotoAppViewController.xib */,
+				99B88B3C179E649300E1C365 /* RootViewController.h */,
+				99B88B44179E64D400E1C365 /* RootViewController.mm */,
+			);
+			name = Controllers;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,7 +195,9 @@
 				38FA6BF5178152D300EFB5D9 /* Default.png in Resources */,
 				38FA6BF7178152D300EFB5D9 /* Default@2x.png in Resources */,
 				38FA6BF9178152D300EFB5D9 /* Default-568h@2x.png in Resources */,
-				38FA6BFF178152D300EFB5D9 /* ViewController.xib in Resources */,
+				99B88B2B179E596D00E1C365 /* 1.jpg in Resources */,
+				99B88B2C179E596D00E1C365 /* 2.jpg in Resources */,
+				99B88B3F179E649300E1C365 /* PhotoAppViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -173,9 +208,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				38FA6BEF178152D300EFB5D9 /* main.m in Sources */,
-				38FA6BF3178152D300EFB5D9 /* AppDelegate.m in Sources */,
-				38FA6BFC178152D300EFB5D9 /* ViewController.m in Sources */,
+				99B88B45179E64D400E1C365 /* PhotoAppViewController.m in Sources */,
+				99B88B46179E64D400E1C365 /* RootViewController.mm in Sources */,
+				99B88B48179E64E000E1C365 /* AppDelegate.m in Sources */,
+				99B88B4A179E650B00E1C365 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,14 +224,6 @@
 				38FA6BEC178152D300EFB5D9 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		38FA6BFD178152D300EFB5D9 /* ViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				38FA6BFE178152D300EFB5D9 /* en */,
-			);
-			name = ViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -260,6 +288,12 @@
 		38FA6C03178152D300EFB5D9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/Library\"",
+					"\"$(SRCROOT)/Frameworks\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CrazyMirror/CrazyMirror-Prefix.pch";
 				INFOPLIST_FILE = "CrazyMirror/CrazyMirror-Info.plist";
@@ -271,6 +305,12 @@
 		38FA6C04178152D300EFB5D9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/Library\"",
+					"\"$(SRCROOT)/Frameworks\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CrazyMirror/CrazyMirror-Prefix.pch";
 				INFOPLIST_FILE = "CrazyMirror/CrazyMirror-Info.plist";
@@ -298,6 +338,7 @@
 				38FA6C04178152D300EFB5D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

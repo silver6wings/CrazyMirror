@@ -1,24 +1,21 @@
-//
-//  AppDelegate.m
-//  CrazyMirror
-//
-//  Created by Junchao Yu on 13-7-1.
-//  Copyright (c) 2013年 Junchao Yu. All rights reserved.
-//
-
 #import "AppDelegate.h"
-
-#import "ViewController.h"
+#import "RootViewController.h"
+#import "PhotoAppViewController.h"
 
 @implementation AppDelegate
+@synthesize navController;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
-    self.viewController = [[ViewController alloc] initWithNibName:@"ViewController" bundle:nil];
-    self.window.rootViewController = self.viewController;
+    self.window.backgroundColor = [UIColor whiteColor];
+    
+    self.navController = [[UINavigationController alloc] initWithRootViewController:[[RootViewController alloc] init]];
+    self.navController.navigationBar.tintColor = [UIColor blackColor];    
+    self.window.rootViewController = navController;
+    
     [self.window makeKeyAndVisible];
+    
     return YES;
 }
 
