@@ -14,6 +14,7 @@
 		38FA6BF5178152D300EFB5D9 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 38FA6BF4178152D300EFB5D9 /* Default.png */; };
 		38FA6BF7178152D300EFB5D9 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 38FA6BF6178152D300EFB5D9 /* Default@2x.png */; };
 		38FA6BF9178152D300EFB5D9 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 38FA6BF8178152D300EFB5D9 /* Default-568h@2x.png */; };
+		9790960817A65D7300960B45 /* UIImage+Cvmat.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9790960717A65D7300960B45 /* UIImage+Cvmat.mm */; };
 		99B88B2B179E596D00E1C365 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 99B88B29179E596D00E1C365 /* 1.jpg */; };
 		99B88B2C179E596D00E1C365 /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 99B88B2A179E596D00E1C365 /* 2.jpg */; };
 		99B88B38179E63E100E1C365 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99B88B37179E63E100E1C365 /* opencv2.framework */; };
@@ -36,6 +37,8 @@
 		38FA6BF4178152D300EFB5D9 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		38FA6BF6178152D300EFB5D9 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		38FA6BF8178152D300EFB5D9 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		9790960617A65D7300960B45 /* UIImage+Cvmat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+Cvmat.h"; path = "Utility/UIImage+Cvmat.h"; sourceTree = "<group>"; };
+		9790960717A65D7300960B45 /* UIImage+Cvmat.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = "UIImage+Cvmat.mm"; path = "Utility/UIImage+Cvmat.mm"; sourceTree = "<group>"; };
 		99B88B29179E596D00E1C365 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 1.jpg; path = Resource/1.jpg; sourceTree = "<group>"; };
 		99B88B2A179E596D00E1C365 /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 2.jpg; path = Resource/2.jpg; sourceTree = "<group>"; };
 		99B88B37179E63E100E1C365 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = Frameworks/opencv2.framework; sourceTree = "<group>"; };
@@ -98,6 +101,7 @@
 				38FA6BF1178152D300EFB5D9 /* AppDelegate.h */,
 				99B88B47179E64E000E1C365 /* AppDelegate.m */,
 				99B88B28179E594000E1C365 /* Controllers */,
+				9790960517A65ADA00960B45 /* Utility */,
 				99B88B27179E592E00E1C365 /* Resource */,
 			);
 			path = CrazyMirror;
@@ -107,14 +111,23 @@
 			isa = PBXGroup;
 			children = (
 				99B88B49179E650B00E1C365 /* main.m */,
-				38FA6BEA178152D300EFB5D9 /* CrazyMirror-Info.plist */,
 				38FA6BEB178152D300EFB5D9 /* InfoPlist.strings */,
+				38FA6BEA178152D300EFB5D9 /* CrazyMirror-Info.plist */,
 				38FA6BF0178152D300EFB5D9 /* CrazyMirror-Prefix.pch */,
 				38FA6BF4178152D300EFB5D9 /* Default.png */,
 				38FA6BF6178152D300EFB5D9 /* Default@2x.png */,
 				38FA6BF8178152D300EFB5D9 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9790960517A65ADA00960B45 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				9790960617A65D7300960B45 /* UIImage+Cvmat.h */,
+				9790960717A65D7300960B45 /* UIImage+Cvmat.mm */,
+			);
+			name = Utility;
 			sourceTree = "<group>";
 		};
 		99B88B27179E592E00E1C365 /* Resource */ = {
@@ -130,11 +143,11 @@
 		99B88B28179E594000E1C365 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				99B88B3C179E649300E1C365 /* RootViewController.h */,
+				99B88B44179E64D400E1C365 /* RootViewController.mm */,
 				99B88B39179E649300E1C365 /* PhotoAppViewController.h */,
 				99B88B43179E64D400E1C365 /* PhotoAppViewController.m */,
 				99B88B3B179E649300E1C365 /* PhotoAppViewController.xib */,
-				99B88B3C179E649300E1C365 /* RootViewController.h */,
-				99B88B44179E64D400E1C365 /* RootViewController.mm */,
 			);
 			name = Controllers;
 			path = ..;
@@ -212,6 +225,7 @@
 				99B88B46179E64D400E1C365 /* RootViewController.mm in Sources */,
 				99B88B48179E64E000E1C365 /* AppDelegate.m in Sources */,
 				99B88B4A179E650B00E1C365 /* main.m in Sources */,
+				9790960817A65D7300960B45 /* UIImage+Cvmat.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
