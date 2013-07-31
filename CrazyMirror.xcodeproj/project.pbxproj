@@ -70,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				38FA6BE8178152D300EFB5D9 /* CrazyMirror */,
+				99B88B27179E592E00E1C365 /* Resource */,
 				38FA6BE1178152D300EFB5D9 /* Frameworks */,
 				38FA6BE0178152D300EFB5D9 /* Products */,
 			);
@@ -102,7 +103,6 @@
 				99B88B47179E64E000E1C365 /* AppDelegate.m */,
 				99B88B28179E594000E1C365 /* Controllers */,
 				9790960517A65ADA00960B45 /* Utility */,
-				99B88B27179E592E00E1C365 /* Resource */,
 			);
 			path = CrazyMirror;
 			sourceTree = "<group>";
@@ -137,7 +137,6 @@
 				99B88B2A179E596D00E1C365 /* 2.jpg */,
 			);
 			name = Resource;
-			path = ..;
 			sourceTree = "<group>";
 		};
 		99B88B28179E594000E1C365 /* Controllers */ = {
@@ -305,7 +304,6 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
-					"\"$(SRCROOT)/Library\"",
 					"\"$(SRCROOT)/Frameworks\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -322,7 +320,6 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
-					"\"$(SRCROOT)/Library\"",
 					"\"$(SRCROOT)/Frameworks\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;

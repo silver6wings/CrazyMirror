@@ -36,7 +36,6 @@ const int kCannyAperture = 7;
     UIImageView * imgv = [[UIImageView alloc] initWithImage:_img];
     imgv.frame = CGRectMake(0, 0, 160, 210);
     [self.view addSubview:imgv];
-    
 }
 
 - (void)didReceiveMemoryWarning{[super didReceiveMemoryWarning];}
